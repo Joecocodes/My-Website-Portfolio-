@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Projects</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="Assets\OIP.webp" type="image/x-icon" />
+  </head>
+
+  <body>
+    <!-- Nav bar html code -->
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutme.html">AboutMe</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+        
+
+    <!-- space out the first content from the nav bar so content isnt under nav bar -->
+    <div class="firstSection"></div>
+
+    <main class="page-wrap" aria-labelledby="projects-heading">
+      <!-- Beginning of header bar with search bar and description -->
+      <header class="page-header">
+        <!-- Title and description inside header -->
+        <div class="header-inner">
+          <h1 id="projects-heading">Projects</h1>
+          <p class="subtitle">Insert description for projects page</p>
+        </div>
+        <!-- Controls in the header box -->
+        <div class="controls">
+          <label for="search" class="visually-hidden">Search projects</label>
+          <input id="search" type="search" placeholder="Search projects..." aria-label="Search projects">
+
+          <!-- Can add more filter buttons here just copy paste and change the text in button -->
+          <div class="filters" role="toolbar" aria-label="Project filters">
+            <button class="filter active" data-filter="*">All</button>
+            <button class="filter" data-filter="web">Web</button>
+            <button class="filter" data-filter="ui">UI</button>
+            <button class="filter" data-filter="ml">ML</button>
+          </div>
+        </div>
+      </header>
+
+      <!-- Start of grid for displaying all the project cards -->
+      <section class="grid" id="projects-grid" aria-live="polite">
+        <!-- Individual Project card start (duplicate/update for each project) -->
+        <!-- Example 1 card -->
+        <article class="card" data-tags="web ui" tabindex="0">
+          <!-- Start of the card -->
+          <div class="card-media">
+            <!-- Insert image link to image of project after the "src=", "alt=" is just what displays if not able to show image -->
+            <img src="https://via.placeholder.com/1200x700?text=Project+1" alt="Screenshot of Project Alpha">
+          </div>
+          <!-- Textual content of the card  -->
+          <div class="card-body">
+            <!-- Change project title here  -->
+            <h2 class="card-title">Project Alpha</h2>
+            <!-- Change description of the project here  -->
+            <p class="card-desc">A responsive marketing site with a lightweight CMS and optimized images for performance.</p>
+            <!-- Change tags for the project here -->
+            <div class="card-meta">
+              <ul class="tags" aria-label="Project tags">
+                <li>Web</li>
+                <li>Performance</li>
+              </ul>
+              <!-- links to the live proejct or code go under here in the "href=" -->
+              <div class="actions">
+                <a class="btn" href="#" aria-label="View live demo of Project Alpha">Live</a>
+                <a class="btn outline" href="#" aria-label="View source code of Project Alpha">Code</a>
+              </div>
+            </div>
+          </div>
+        </article>
+        <!-- Example 1 card end -->
+        <!-- Individual Project card template end -->
+
+        <!-- Example 2 card -->
+        <article class="card" data-tags="ml" tabindex="0">
+          <div class="card-media">
+            <img src="https://via.placeholder.com/1200x700?text=Project+3" alt="Visualization from ML project">
+          </div>
+          <div class="card-body">
+            <h2 class="card-title">Predictive Model</h2>
+            <p class="card-desc">A prototype ML pipeline for forecasting demand with explainability visualizations.</p>
+            <div class="card-meta">
+              <ul class="tags" aria-label="Project tags">
+                <li>ML</li>
+                <li>Data</li>
+              </ul>
+              <div class="actions">
+                <a class="btn" href="#" aria-label="View demo of Predictive Model">Live</a>
+                <a class="btn outline" href="#" aria-label="View code of Predictive Model">Code</a>
+              </div>
+            </div>
+          </div>
+        </article>
+        <!-- Example 2 card end -->
+        <!-- Add more cards as needed -->
+    
+
+      </section>
+
+      <footer class="page-footer">
+        <!-- Add note to the viewer  -->
+        <p>Add footer note</p>
+      </footer>
+    </main>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
